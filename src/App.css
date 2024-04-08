@@ -1,0 +1,127 @@
+body {
+  background-color: #8e7ab5;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  background-color: #ffebb2;
+  width: max-content;
+  min-height: 65px;
+  padding: 70px;
+  box-sizing: border-box;
+  border-radius: 10px;
+  box-shadow: 3px 6px 40px #000;
+  margin-bottom: 10px;
+}
+
+header {
+  padding: 1rem;
+  text-align: center;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+h1 {
+  font-size: 2rem;
+  margin: 0;
+  color: #d862bc;
+}
+
+h2 {
+  color: #5755fe;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+h4 {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+form {
+  display: flex;
+  margin-bottom: 1rem;
+}
+
+input[type="text"] {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 0.5rem;
+  font-size: 1rem;
+  width: 300px;
+}
+
+button[type="submit"] {
+  background-color: #2b1a12;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-left: 1rem;
+}
+
+.task-list {
+  list-style: none;
+  padding: 0.5rem 1rem;
+  margin: 0;
+  width: 300px;
+  margin-top: 50px;
+}
+
+.task-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #f9f9f9;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  margin-bottom: 0.5rem;
+}
+
+.task-item:last-child {
+  margin-bottom: 0;
+}
+
+.task-description {
+  flex: 1;
+  margin-right: 1rem;
+}
+
+button {
+  background-color: #481e14;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  padding: 0.25rem 0.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-left: 1rem;
+  /* width: 75px;
+  height: 45px; */
+}
+
+button:hover {
+  background-color: #9195f6;
+}
+
+.edit-button {
+  background-color: #77dd77;
+}
+
+.edit-button:hover {
+  background-color: #9195f6;
+}
+
+.task-item.completed {
+  text-decoration: line-through;
+  filter: grayscale(100%);
+}
+.taskListContainer {
+  padding-top: 20px;
+}
