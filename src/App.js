@@ -23,7 +23,7 @@ function App() {
     const updatedTasks = tasks.map((task) =>
       task.id === id
         ? { ...task, description: updatedTask, completed: isCompleted }
-        : task
+        : task,
     );
     setTasks(updatedTasks);
   };
@@ -48,15 +48,6 @@ function App() {
       <Header />
       <Title />
       <AddTask addTask={handleAddTask} />
-      <div className="filter-buttons">
-        <button onClick={() => handleFilterChange("all")}>Show All</button>
-        <button onClick={() => handleFilterChange("completed")}>
-          Show Completed
-        </button>
-        <button onClick={() => handleFilterChange("active")}>
-          Show Active
-        </button>
-      </div>
       <DropdownMenu onFilterChange={handleFilterChange} />
       <TaskList
         tasks={tasks}
